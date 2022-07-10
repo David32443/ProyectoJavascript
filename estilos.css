@@ -1,0 +1,229 @@
+*{
+    margin: 0px;
+}
+
+.parteArriba{
+    border: 2px solid black;
+    background-color: rgba(255, 183, 0, 0.895);
+    margin: 1px;
+    padding: 1px;
+    height: 130px;
+}
+
+.parteIzquierda{
+    border: 2px solid black;
+    background-color: white;
+    margin: 1px;
+    padding: 1px;
+    width: 250px;
+    height: 500px;
+}
+
+.parteDerecha{
+    border: 2px solid black;
+    background-color: white;
+    margin: 1px;
+    padding: 1px;
+    width: 1400px;
+    height: 500px;
+}
+
+.parteAbajo{
+    border: 2px solid black;
+    background-color: rgba(255, 183, 0, 0.895);
+    margin: 1px;
+    padding: 1px;
+    height: 54px;
+}
+
+.parteIzquierdaDerecha{
+    display: flex;
+    flex-direction: row;
+}
+
+.parteIzquierda  button{
+    width: 100%;
+    background: rgb(255, 128, 0);
+    border: 2px solid black;
+    padding: 4px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.parteIzquierda button:hover{
+    background-color: rgba(255, 204, 0, 0.881);
+}
+
+.Cuadro{
+    border: 2px solid black;
+    height: 25rem;
+    margin: 50px 250px auto 250px;
+}
+
+.apple{
+    border: 1px solid black;
+    display: flex;
+    position: absolute;
+}
+
+.Apple1{
+    border: 1px solid black;
+    width: 420px;
+    left: 670px;
+    margin-top: -2px;
+    flex-direction: row;
+    font-size: 300%;
+    height: 55px;
+}
+
+.Apple2{
+    border: 1px solid black;
+    width: 62px;
+    margin-top: 70px;
+    margin-left: -1px;
+    flex-direction: column;
+    font-size: 300%;
+    height: 228px;
+}
+
+.Apple3{
+    border: 1px solid black;
+    width: 65px;
+    margin-left: 720px;
+    margin-top: 70px;
+    flex-direction: column;
+    font-size: 300%;
+    height: 228px;
+}
+
+.Apple4{
+    border: 1px solid black;
+    width: 200px;
+    left: 820px;
+    margin-top: 160px;
+    flex-direction: row;
+    font-size: 300%;
+    height: 55px;
+}
+
+.Apple4-1{
+    border: 2px solid black;
+    width: 78px;
+    left: 740px;
+    margin-top: 160px;
+    font-size: 300%;
+    height: 80px;
+}
+
+.Apple5{
+    border: 1px solid black;
+    width: 375px;
+    left: 720px;
+    margin-top: 345px;
+    font-size: 300%;
+    height: 55px;
+}
+
+.Garita{
+    border: 1px solid black;
+    width: 70px;
+    height: 30px;
+    margin-top: 385px;
+    margin-left: 80px;
+    background-color: green;
+}
+
+.villa{
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+    color: blue;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .3s;
+    --transform: translateY(0);
+}
+
+.modal_container{
+    margin: auto;
+    background-image: linear-gradient(to left,#8333FF,#AA2F70);
+    width: 90%;
+    background-color: #fff;
+    max-width: 600px;
+    max-height: 90%;
+    border-radius: 6px;
+    padding: 3em  4em;
+    display: grid;
+    gap: 1em;
+    place-items: left;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition: var(--transition);
+}
+
+.modal_close{
+    text-decoration: none;
+    place-self: center;
+    width: 90px;
+    color: #fff;
+    background-color: #f26250;
+    padding: 0.8em 0.8em;
+    border: 1px solid;
+    display: inline-block;
+    border-radius: 6px;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.modal_close:hover{
+    color: #f26250;
+    background-color: #fff;
+}
+
+h1{
+    text-align: center;
+}
+
+.INPUT{
+    background: silver;
+    border: 1px solid #393939;
+    border-radius: 5px 5px 5px 5px;
+    color: #393939;
+    font-size: 12px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.LABELS{
+    font-size: 17px;
+    margin-right: 40px;
+    color: black;
+}
+
+
+/*.villaGrande{
+    border: 1px solid black;
+    width: 150%;
+    height: 100px;
+    text-align: center;
+    color: blue;
+}*/

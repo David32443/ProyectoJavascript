@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=exdge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+    <div class="parteArriba"></div>
+    <div class="parteIzquierdaDerecha">
+        <div class="parteIzquierda">
+            <button onclick="javascript:cambiaResidentes();">Residentes</button>
+            <button onclick="javascript:cambiaResidentesSinDeudas();">Residentes sin deudas</button>
+            <button onclick="javascript:cambiaResidentesConDeudas();">Residentes con deudas</button>
+            <button onclick="javascript:cambiaResidentesSinPropietarios();">Residentes sin propietarios</button>
+        </div>
+        <div class="parteDerecha">
+            <div class="Cuadro">
+                <div class="Apple1 apple">
+                    <div id="villa11" class="villa" onclick="mostrarDetallesVilla1(document.getElementById('villa11'))">1</div>
+                    <div id="villa12" class="villa" onclick="mostrarDetallesVilla1(document.getElementById('villa12'))">2</div>
+                    <div id="villa13" class="villa" onclick="mostrarDetallesVilla1(document.getElementById('villa13'))">3</div>
+                    <div id="villa14" class="villa" onclick="mostrarDetallesVilla1(document.getElementById('villa14'))">4</div>
+                    <div id="villa15" class="villa" onclick="mostrarDetallesVilla1(document.getElementById('villa15'))">5</div>
+                    <div id="villa16" class="villa" onclick="mostrarDetallesVilla1(document.getElementById('villa16'))">6</div>
+                </div>
+                <div class="Apple2 apple">
+                    <div id="villa21" class="villa" onclick="mostrarDetallesVilla2(document.getElementById('villa21'))">1</div>
+                    <div id="villa22" class="villa" onclick="mostrarDetallesVilla2(document.getElementById('villa22'))">2</div>
+                    <div id="villa23" class="villa" onclick="mostrarDetallesVilla2(document.getElementById('villa23'))">3</div>
+                    <div id="villa24" class="villa" onclick="mostrarDetallesVilla2(document.getElementById('villa24'))">4</div>
+                </div>
+                <div class="Apple3 apple">
+                    <div id="villa31" class="villa" onclick="mostrarDetallesVilla3(document.getElementById('villa31'))">1</div>
+                    <div id="villa32" class="villa" onclick="mostrarDetallesVilla3(document.getElementById('villa32'))">2</div>
+                    <div id="villa33" class="villa" onclick="mostrarDetallesVilla3(document.getElementById('villa33'))">3</div>
+                    <div id="villa34" class="villa" onclick="mostrarDetallesVilla3(document.getElementById('villa34'))">4</div>
+                </div>
+                <div class="Apple4 apple">
+                    <div id="villa41" class="villa" onclick="mostrarDetallesVilla4(document.getElementById('villa41'))">1</div>
+                    <div id="villa42" class="villa" onclick="mostrarDetallesVilla4(document.getElementById('villa42'))">2</div>
+                    <div id="villa43" class="villa" onclick="mostrarDetallesVilla4(document.getElementById('villa43'))">3</div>
+                    <div id="villa44" class="villa" onclick="mostrarDetallesVilla4(document.getElementById('villa44'))">4</div>
+                </div>
+                <div class="Apple4-1 apple">
+
+                </div>
+                <div class="Apple5 apple">
+                    <div id="villa51" class="villa" onclick="mostrarDetallesVilla5(document.getElementById('villa51'))">1</div>
+                    <div id="villa52" class="villa" onclick="mostrarDetallesVilla5(document.getElementById('villa52'))">2</div>
+                    <div id="villa53" class="villa" onclick="mostrarDetallesVilla5(document.getElementById('villa53'))">3</div>
+                    <div id="villa54" class="villa" onclick="mostrarDetallesVilla5(document.getElementById('villa54'))">4</div>
+                    <div id="villa55" class="villa" onclick="mostrarDetallesVilla5(document.getElementById('villa55'))">5</div>
+                </div>
+                <div class="Garita apple"></div>
+            </div>
+        </div>
+    </div>
+    <div class="parteAbajo"></div>
+    
+    <section class="modal">
+        <div class="modal_container">
+            <h1>Datos</h1>
+            <div class="modal_labels"><label class="LABELS">Nombres: <input type="text" id="nombresInput" class="INPUT"></label></div>
+            <div class="modal_labels"><label class="LABELS">Apellidos: <input type="text" id="apellidosInput" class="INPUT"></label></div>
+            <div class="modal_labels"><label class="LABELS">Cedula: <input type="text" id="cedulaInput" class="INPUT"></label></div>
+            <div class="modal_labels"><label class="LABELS">Villa: <input type="text" id="villaInput" class="INPUT"></label><label class="LABELS">Manzana: <input type="text" id="manzanaInput" class="INPUT"></label></div>
+            <div class="modal_labels"><label class="LABELS">Correo: <input type="text" id="correoInput" class="INPUT"></label></div>
+            <div class="modal_labels"><label class="LABELS">Fecha de Ingreso: <input type="text" id="fechaInput" class="INPUT"></label></div>
+            <a href="#" class="modal_close">Cerrar Modal</a>
+        </div>
+    </section>
+
+    <script src="/ProyectoJavascript/archivo.js"></script>
+    <script src="/ProyectoJavascript/conectar.js"></script>
+</body>
+</html>
